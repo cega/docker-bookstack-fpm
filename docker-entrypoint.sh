@@ -76,7 +76,6 @@ if [ ! -f '/var/www/BookStack/.env' ]; then
       MAIL_USERNAME=${MAIL_USERNAME:-null}
       MAIL_PASSWORD=${MAIL_PASSWORD:-null}
       MAIL_ENCRYPTION=${MAIL_ENCRYPTION:-null}
-      # URL used for social login redirects, NO TRAILING SLASH
 EOF
     else
         echo >&2 'error: missing DB_PORT or DB_HOST environment variables'
@@ -105,6 +104,4 @@ cd /var/www/BookStack/ && php artisan key:generate && php artisan migrate --forc
 
 chown -R www-data:www-data /var/www/BookStack/public/uploads && chmod -R 775 /var/www/BookStack/public/uploads
 
-php-fpm --daemonize
-
-nginx -g 'daemon off;'
+exec "$@"
