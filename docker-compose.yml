@@ -21,6 +21,7 @@ services:
     - DB_PASSWORD=secret
     volumes:
     - ./uploads:/var/www/BookStack/public/uploads
+    - ./attachments:/var/www/BookStack/storage/uploads
 
   nginx:
     image: nginx

@@ -1,1 +1,4 @@
 .idea/
+mysql/
+uploads/*
+attachments/*
