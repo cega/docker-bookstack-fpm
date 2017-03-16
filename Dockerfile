@@ -1,7 +1,7 @@
 FROM php:7.0-fpm
 
 ENV BOOKSTACK=BookStack \
-    BOOKSTACK_VERSION=0.13.1
+    BOOKSTACK_VERSION=0.15.2
 
 RUN apt-get update && apt-get install --no-install-recommends -y git zlib1g-dev libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng12-dev wget libldap2-dev libtidy-dev \
   && docker-php-ext-install pdo pdo_mysql mbstring zip tidy \

@@ -2,7 +2,7 @@
 
 # Docker Image with [BookStack](https://github.com/BookStackApp/BookStack) handle by Pḧp-fpm
 
-## Current Version: [0.13.1](https://github.com/tchiotludo/docker-bookstack-fpm/blob/master/Dockerfile)
+## Current Version: [0.15.2](https://github.com/tchiotludo/docker-bookstack-fpm/blob/master/Dockerfile)
 
 ## Quickstart
 With Docker Compose is a Quickstart very easy. Run the following command:
